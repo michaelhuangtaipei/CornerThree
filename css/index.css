@@ -1,0 +1,589 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 300vh; */
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 138px;
+    padding-right: 138px;
+}
+
+h3 {
+    color: #AFAFAF;
+    margin: 0 24px 0 24px;
+}
+
+/* ---------------header---------------- */
+
+header {
+    height: 400px;
+}
+
+.banner {
+    background: url("../img/pic-1.jpg") center center;
+    background-size: cover;
+    position: relative;
+}
+
+.center {
+    height: 400px;
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.bannerLogo {
+    width: 290px;
+}
+
+.banner-mask {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, 80%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------nav--------------- */
+
+.main-nav {
+    position: absolute;
+    background: #ffff;
+    width: 100%;
+    height: 80px;
+    box-shadow: -1px 3px 10px #aaaaaa;
+    z-index: 2;
+}
+
+.nav-left {
+    width: 450px;
+    min-height: 80px;
+}
+
+.nav-right {
+    min-height: 80px;
+}
+
+.logo {
+    max-height: 28px;
+    transition: .4s;
+}
+
+.ul-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav div ul li a {
+    color: #AFAFAF;
+    font-weight: 100;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .5s;
+}
+
+nav div ul li a:hover {
+    color: #FFB45A;
+    text-decoration: none;
+}
+
+nav div a {
+    color: #FFB45A;
+    margin: 0 0 0 10px;
+    transition: .5s;
+}
+
+nav div a:hover {
+    text-decoration: none;
+    color: #AFAFAF;
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav-web {
+    max-width: 25px;
+}
+
+.nav-web:hover {
+    filter: drop-shadow(4px 4px 2px #e6e6e6);
+}
+
+@media screen and (max-width:960px) {
+    nav div ul li a {
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    nav div a {
+        display: none;
+        /* visibility: hidden; */
+    }
+
+    /* .nav-web {
+        visibility: visible;
+    } */
+}
+
+@media screen and (min-width:961px) {
+    .nav-web {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .login {
+        display: none;
+    }
+}
+
+/* ----------------nav MB--------------- */
+
+.MB-content {
+    visibility: hidden;
+    /* background-color: #ffff; */
+    transition: .3s;
+}
+
+.MB2-content {
+    visibility: visible;
+    /* background-color: #ffff; */
+    box-shadow: 1px 4px 8px #aaaaaa;
+}
+
+nav aside a {
+    /* background: #aaaaaa; */
+    /* margin-bottom: 3px; */
+    border: 5px solid #ffff;
+    border-radius: 0 !important;
+}
+
+
+/* ----------------section--------------- */
+
+#num1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#num2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#num3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.numScroll {
+    height: 400px;
+    margin: 0 auto;
+}
+
+.textTop {
+    margin-top: 80px;
+    width: 110px;
+}
+
+section div span {
+    color: #AFAFAF;
+    font-size: 62px;
+}
+
+section div p {
+    color: #AFAFAF;
+}
+
+@media screen and (max-width:768px) {
+    .numScroll {
+        margin-top: 80px;
+        height: 600px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textTop {
+        margin-top: 10px;
+    }
+}
+
+/* ----------------aside----------------- */
+
+.box {
+    border-top: 1px solid #AFAFAF;
+    width: 70px;
+}
+
+.newInfo {
+    width: 100%;
+    /* background: #aaaaaa; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.infoCard {
+    width: 100%;
+    background: #ffff;
+}
+
+.infoCardleft {
+    margin-right: 50px;
+}
+
+.pic {
+    background: url("../img/candybird_banner_1.jpg")center center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+}
+
+.pic2 {
+    background: url("../img/Breathing-Paddy.jpg")center center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+
+}
+
+.infoh3 {
+    margin: 30px 0 30px 0;
+    color: black;
+}
+
+.cardBox {
+    border-top: 1px solid #AFAFAF;
+    width: 100%;
+}
+
+.cardMore {
+    width: 100%;
+}
+
+.cardP {
+    color: #AFAFAF;
+    font-weight: 100;
+    margin: 30px 0 30px 0;
+    line-height: 35px;
+}
+
+time {
+    font-weight: 100;
+}
+
+.btn {
+    background: #FFCE94;
+    color: #ffff;
+    transition: .2s;
+}
+
+.btn:hover {
+    background: #FFF5E9;
+    color: #AFAFAF;
+}
+
+@media screen and (max-width:768px) {
+    .newInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoCard {
+        margin-top: 20px;
+    }
+}
+
+/* ----------------article----------------- */
+
+.artTopSpace {
+    margin-top: 60px;
+}
+
+.newInfoArt {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.artsCard {
+    width: 320px;
+    height: 320px;
+    background: url("../img/chenchenpo_1.jpg")center center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.artsCard2 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/chenichun_1.jpg")center center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.artsCard3 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/leowang_1.jpg")center center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.artsCard4 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/Garden_1.jpg")center center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.artsCard5 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/YANG-Yu-Yu_1.jpg")center center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.artsCard6 {
+    width: 320px;
+    height: 320px;
+    background: url("../img/z18-1.jpg")center center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.artsCardMask {
+    position: absolute;
+    background: rgba(255, 255, 255, 90%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+    transition: .5s;
+}
+
+.artsCard:hover .artsCardMask {
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transform: scale(1, 1);
+}
+
+.artsCard2:hover .artsCardMask {
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transform: scale(1, 1);
+}
+
+.artsCard3:hover .artsCardMask {
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transform: scale(1, 1);
+}
+
+.artsCard4:hover .artsCardMask {
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transform: scale(1, 1);
+}
+
+.artsCard5:hover .artsCardMask {
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transform: scale(1, 1);
+}
+
+.artsCard6:hover .artsCardMask {
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transform: scale(1, 1);
+}
+
+.maskCard {
+    width: 80%;
+    height: 80%;
+}
+
+.artsCardName {
+    color: #AFAFAF;
+    text-align: center;
+}
+
+.artborder {
+    width: 100%;
+    border: 1px dashed #AFAFAF;
+    margin: 20px 0 10px 0;
+}
+
+.artsCardp {
+    font-size: 12px;
+}
+
+.articleTop {
+    margin-top: 50px;
+}
+
+.newInfo2 {
+    width: 100%;
+    /* background: #aaaaaa; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:768px) {
+    .col-4 {
+        max-width: 100%;
+        flex: 100%;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    .artTopSpace {
+        margin-top: 30px;
+    }
+
+    .peopleCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artsCard2 {
+        margin: 50px 0 50px 0;
+    }
+
+    .artsCard5 {
+        margin: 50px 0 50px 0;
+    }
+}
+
+/* ----------------footer----------------- */
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer article {
+    padding: 60px;
+}
+
+.footerBox {
+    width: 100%;
+    border-top: 1px solid #AFAFAF;
+}
+
+.footerLogo {
+    width: 100%;
+    height: 100px;
+    /* margin-right: 85px; */
+}
+
+.footer-content {
+    width: 50%;
+    height: 100%;
+    /* margin-left: 40px; */
+}
+
+.footerIcon-content {
+    width: 156px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerIcon {
+    width: 25px;
+    /* margin-right: 40px; */
+}
+
+.footerIconline {
+    width: 25px;
+}
+
+footer article span {
+    font-size: 12px;
+    color: #AFAFAF;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.footerPborder {
+    font-weight: 400;
+}
+
+footer article span a:hover {
+    color: #FFB45A;
+}
+
+.borderDown {
+    margin-bottom: 50px;
+}
+
+.ccRes {
+    font-size: 12px;
+    color: #AFAFAF;
+    font-weight: 100;
+}
+
+.ccResBG {
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1024px) {
+    .footerRWD {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .footerIcon-content {
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        margin: 30px 0 30px 0;
+
+    }
+
+    .borderTop {
+        margin-top: 50px;
+    }
+
+    .ccResBG {
+        margin-bottom: 50px;
+    }
+}
